@@ -7,14 +7,12 @@ import psycopg2.extras
 
 app = Flask(__name__)
 
-heading = ("Name","Attaque","Health","ChapterNM","ChapterHM")
-
 def get_db_connection():
     conn = psycopg2.connect(
-        host='ec2-54-228-32-29.eu-west-1.compute.amazonaws.com',
-        database='d2gm319ojamf98',
-        user='wiycckcyrozefh',
-        password='1d6e3b493a710e19a35a695cd1640b31e5abf38cf2dfb4487a1d86d8c011a707')
+        host='HOSTNAME',
+        database='DATABASE URI',
+        user='USERNAME',
+        password='PASSWORD')
     return conn
 
 @app.route("/classement/attaque/")
@@ -27,7 +25,7 @@ def classement_atk():
         displayDB = cur.fetchall()
         cur.close()
         conn.close()
-        return render_template('displaydb.html', data=displayDB, heading=heading)
+        return render_template('displaydb.html', data=displayDB)
 
 @app.route("/classement/pv/")
 def classement_pv():
