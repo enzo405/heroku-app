@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css-home.css')}}">
+    <script src="https://kit.fontawesome.com/3d745be566.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/image-favicon.png"/>
+    <title>adaYTgaming</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="{{ url_for('static',filename='image-adaprofile.jpg')}}" alt="archero logo">
+                    <h3>adaYTgaming</h3>
+                    <p>Mobile Game</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="tuto-classement">
+                            <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+                            <span class="item">Tuto Classement</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="classement">
+                            <span class="icon"><i class="fa fa-bar-chart"></i></span>
+                            <span class="item">Classement Stats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCJoV9pAMDRvD70JV7iLwA2g" target="_blank" class="active">
+                            <span class="icon"><i class="fa fa-youtube"></i></span>
+                            <span class="item">adaYTgaming</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/Mv5zU4g" target="_blank">
+                            <span class="icon"><i class="fa-brands fa-discord"></i></span>
+                            <span class="item">Lien Discord</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitch.tv/ada_streaming" target="_blank">
+                            <span class="icon"><i class="fa fa-twitch"></i></span>
+                            <span class="item">Chaine Twitch</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/adaytgaming/" target="_blank">
+                            <span class="icon"><i class="fa fa-instagram"></i></span>
+                            <span class="item">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="body-without-sidebar">
+            <img src="/static/image-HFW-fond.jpg" class="image-HFW"><img>
+            <div class="presentation">
+                <h1>Présentation :</h1>
+                <li class="ada-desc">Cette Jeune personne vie actuellement à Miami il a 26 ans et adore les jeux mobiles ! Il a déjà fait un feat avec Sofyan, c'est fait envahir par des pets ulala chez lui et surtout n'aime pas faire la vaiselle. Sa phrase de prédilection c'est : "Tout est calculé".</li><br>
+                <li class="ada-desc">Si vous souhaitez faire partie de la magnifique communauté de ADA alors venez sur le serveur discord en cliquant <a class="discord-link" href="https://discord.gg/Mv5zU4g" target="_blank">ici</a>, du fun, des blagues, du tryhard, des débats et surtout ne réveillez pas la mamie lovii. </li>
+                <li class="ada-desc">Il y a tout de même quelque règles à respecter : EVITEZ de ping (@) les gens apres 23h grand max (voire même 22h30), si vous souhaitez vraiment que la personne vois votre message dans ce cas là vous avez 2 options, soit vous dites juste le nom sans rien et espérez que la personne vois le message, soit vous avez une méthode qui se nomme le "Silent ping" (vous envoyez le message sans mentionné la personne puis ensuite vous modifiez le message en mentionnant la personne qui ne recevra pas de notifications. Merci de votre compréhension</li>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

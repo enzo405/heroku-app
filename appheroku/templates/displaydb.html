@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <html lang="en">
+        <html translate="no">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css-main.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css-topbar.css')}}">
+        <script src="https://kit.fontawesome.com/3d745be566.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="/static/image-favicon.png"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Classement</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="topbar">
+                <li><a href='/' class='navbartitle-font'><div class="fa fa-home"></div></a></li>
+                <li class='dropdown'>
+                <a href="#" class="dropbtn navbartitle-font" id="coolthing">ADA chaines</a>
+                <div class="dropdown-content">
+                    <a href="https://discord.gg/Mv5zU4g"target="_blank"><i class="fa fa-paperclip"></i> Discord</a>
+                    <a href="https://www.twitch.tv/ada_streaming"target="_blank"><i class="fa fa-paperclip"></i> Twitch</a>
+                    <a href="https://www.youtube.com/channel/UCJoV9pAMDRvD70JV7iLwA2g" target="_blank"><i class="fa fa-paperclip"></i> Youtube</a>
+                    <a href="https://www.instagram.com/adaytgaming/?hl=fr" target="_blank"><i class="fa fa-paperclip"></i> Instagram</a>
+                </div>
+                </li>
+                <li><a href="/tuto-classement/" class="navbartitle-font">Tuto Classement</a></li>    
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="table100 ver3 m-b-110">
+                <div class="table100-head">
+                    <table>
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="cell100 column1">n°</th>
+                                <th class="cell100 column2">Name</th>
+                                <th class="cell100 column3">Attaque  <a href="/classement/attaque/"><button id="btn"><i class="fa fa-arrow-up"></i></button></a></th>
+                                <th class="cell100 column4">Health  <a href="/classement/pv/"><button id="btn"><i class="fa fa-arrow-up"></i></button></a></th>
+                                <th class="cell100 column5">Normal Finis</th>
+                                <th class="cell100 column6">Héroique Finis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for row in data  %}
+                            <tr class="row100 body">
+                                    <td class="cell100 column1"> {{ loop.index }} </td>
+                                    <td class="cell100 column2"> {{ row[0] }} </td>
+                                    <td class="cell100 column3"> {{ row[1] }} </td>
+                                    <td class="cell100 column4"> {{ row[2] }} </td>
+                                    <td class="cell100 column5"> {{ row[3] }} </td>
+                                    <td class="cell100 column6"> {{ row[4] }} </td>
+                            </tr>
+                            {% endfor %}
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Réalisé par LuhCaran avec l'aide de Bogdahn</p>
+            <p>Si vous avez des difficultés soit avec le Bot soit avec ce site web, veuillez me contacter sur discord (LuhCaran#9802) </p>
+        </footer>
+      </div>
+    </div>
+</body>
+</html>

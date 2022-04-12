@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css-tuto-classement.css')}}"/>
+    <script src="https://kit.fontawesome.com/3d745be566.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/static/image-favicon.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuto pour Classement</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="{{ url_for('static',filename='image-archerologo.png')}}" alt="archero logo">
+                    <h3>Archero</h3>
+                    <p>Mobile Game</p>
+                </div>
+                    <ul>
+                        <li>
+                            <a href="/">
+                                <span class="icon"><i class="fa fa-home"></i></span>
+                                <span class="item">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/classement">
+                                <span class="icon"><i class="fa fa-bar-chart"></i></span>
+                                <span class="item">Classement</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCJoV9pAMDRvD70JV7iLwA2g" target="_blank" class="active">
+                                <span class="icon"><i class="fa fa-youtube"></i></span>
+                                <span class="item">adaYTgaming</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/Mv5zU4g" target="_blank">
+                                <span class="icon"><i class="fa-brands fa-discord"></i></span>
+                                <span class="item">Lien Discord</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitch.tv/ada_streaming" target="_blank">
+                                <span class="icon"><i class="fa fa-twitch" aria-hidden="true"></i></span>
+                                <span class="item">Chaine Twitch</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/adaytgaming/" target="_blank">
+                                <span class="icon"><i class="fa fa-instagram"></i></span>
+                                <span class="item">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="CF"> <!--container + footer-->
+            <div class="container">
+                <h1>Comment rentrer dans le classement ?</h1>
+                <li class="tutoli">Dans un premier temps vous allez devoir rejoindre le discord en cliquant <a id = "discordlink" href="https://discord.gg/Mv5zU4g" target="_blank">ici</a></li>
+                <li class="tutoli">Ensuite une fois le discord de ADA rejoint, vous allez devoir rentrer dans le channel #wiki (channel réservé pour les commandes des bots)</li>
+                <li class="tutoli">Puis ensuite il faudra suivre les instructions de la commande ?rank_help</li>
+                <li>Pour ceux qui aimerai avoir le bot sur leur serveur cliquez ici <i class="fa fa-arrow-right"></i>
+                    <a href="https://discord.com/api/oauth2/authorize?client_id=889450194935099412&permissions=8&scope=bot" target="_blank" class="fa-brands fa-discord"></i></a>
+                </li>
+                <img src="/static/image-rank_help.png" id="rankhelp" alt="screenshot ?rank_help">
+            </div>
+        </div>
+    </main>    
+</body>
+</html>
